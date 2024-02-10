@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background: #d7eeff;
+}
+
+.logIn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #D7EEFF;
+    width: auto;
+    margin: 60px 0 0px 0;  
+}
+
+.photo
+{
+    height: 50%;
+    width: 50%;
+    margin: 50px;
+    border-radius: 5%;
+    justify-self: center;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+}
+
+label{
+    font-size: 16px;
+    color: black;
+}
+
+.username, .password{
+    padding-top: 20px;
+    width: 80%;
+}
+
+.username input, .password input{
+    width: 100%;
+    border: 2px solid whitesmoke;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.remember-forgot a:hover{
+    text-decoration:underline;
+    background-color: #D7EEFF;
+}
+
+.signupLink{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    margin: 20px 0 15px;
+    color: grey;
+}
+
+.signupLink a:hover{
+    text-decoration:underline;
+    background-color: #D7EEFF;
+}
+
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}

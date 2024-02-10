@@ -1,0 +1,90 @@
+{% extends 'main.html' %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>File Upload</title>
+        <link rel ="stylesheet" href="{% static 'styles/upload.css' %}">
+        <script src="{% static 'scripts/upload.js' %}"></script>
+    </head>
+    <body>
+
+
+    {% block content %}
+    
+        <div class="main">
+            
+            <form class="upload" action="{% url 'upload' %}" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+        
+                {{ form.as_p }}
+                <div class="job">
+                    <h2 style="margin-bottom: 20px;">Job Description</h2>
+                    <!-- <form action="upload.php" method="post" enctype="multipart/form-data"> -->
+                    <input type="file" id="myfile1" name="jobdescription">
+                        
+                    <div class="slider-container">
+                        <h3 style="margin-top: 20px;">Priority order:</h3>
+    
+                        <div class="prio">
+                            <label for="skills">Skills:</label>
+                            <div class="sliderValue">
+                                <input type="range" class="slider" id="skills" name="skills" min="0" max="100" value="20">
+                                <div class="value">20</div>
+                            </div>
+                        </div>
+                        
+                        <div class="prio">
+                            <label for="education">Education:</label>
+                            <div class="sliderValue">
+                                <input type="range" class="slider" id="education" name="education" min="0" max="100" value="20">
+                                <div class="value">20</div>
+                            </div>
+                        </div>
+                        
+                        <div class="prio">
+                            <label for="age">Age:</label>
+                            <div class="sliderValue">
+                                <input type="range" class="slider" id="age" name="age" min="0" max="100" value="20">
+                                <div class="value">20</div>
+                            </div>
+                        </div>
+                        
+                        <div class="prio">
+                            <label for="experience">Experience:</label>
+                            <div class="sliderValue">
+                                <input type="range" class="slider" id="experience" name="experience" min="0" max="100" value="20">
+                                <div class="value">20</div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <div class="resume">
+                    <h2 style="margin-bottom: 20px;">Resumes</h2>
+    
+                    <input type="file" id="myfile2" name="resumes" multiple="">
+    
+                    <div class="skill">
+                        <h3 style="margin-top: 20px;">Shortlist:</h3>
+                        <input type="number" class="number" name="count" min="1" max="20">
+                    </div>
+                </div>
+                <button class="submit">Submit</button>
+            </form> 
+    
+            <div class="sample">
+                <iframe id="text" src="{% static 'files/sample.txt' %}"></iframe>
+            </div>
+        </div>
+        
+    {% endblock content %}
+
+ 
+
+     
+
+    

@@ -1,0 +1,57 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+    <link rel="stylesheet" href="{% static 'styles/home.css' %}">
+    
+    <main>
+        <div class="grid">
+            <p class="remainder"><font color="green">24/7</font>Resume Screening</p>
+            <div>
+                <h1 style="padding-bottom: 0px;">Resume<br>Screening</h1>
+                <p>Find the best candidate for your job based on skills, qualification and location.</p>
+            </div>
+            <button class="submit">Resume Screening</button>
+        </div>
+        <img src= "{% static 'images/home.png' %}" alt="Intro">
+    </main>
+    <section id="sec1">
+        <h2 style="text-align: center; padding: 40px 10px 0px 10px;">Services</h2>
+        <div class="services">
+            <div class="service">
+                <img src="./images/service-1.png" alt="service-1">
+                <h3>Resume Screening</h3>
+                <p>Find the best candidate for your job based on skills, qualification and location.</p>
+            </div>
+            <div class="service">
+                <img src="./images/service-2.png" alt="service-2">
+                <h3>Resume Screening</h3>
+                <p>Find the best candidate for your job based on skills, qualification and location.</p>
+            </div>
+            <div class="service">
+                <img src="./images/service-3.png" alt="service-3">
+                <h3>Resume Screening</h3>
+                <p>Find the best candidate for your job based on skills, qualification and location.</p>
+            </div>
+        </div>
+    </section>
+    <section id="sec2">
+        <!-- feedback -->
+        <h2 style="text-align: center; padding: 40px 10px 0px 10px;">Feedback</h2>
+        <div class="feedbacks">
+            <div class="feedback">
+                <img src="./images/feedback-1.png" alt="feedback-1">
+                <p>Find the best candidate for your job based on skills, qualification and location.</p>
+            </div>
+            <div class="feedback">
+                <img src="./images/feedback-2.png" alt="feedback-2">
+                <p>Find the best candidate for your job based on skills, qualification and location.</p>
+            </div>
+            <div class="feedback">
+                <img src="./images/feedback-3.png" alt="feedback-3">
+                <p>Find the best candidate for your job based on skills, qualification and location.</p>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}

@@ -1,0 +1,27 @@
+About the job
+Job Opportunity: Android Developer at Ayata Incorporation Private Limited
+
+
+🌐 Company: Ayata Inc 
+
+📍 Location: Kathmandu, Baneshwor
+📧 Email: hr@ayata.com.np
+🔗 Company Website: www.ayata.com.np
+🔍 Job Type: On-site
+
+Ayata Inc is seeking a highly skilled and motivated Android Developer to join our dynamic team in Kathmandu, Baneshwor. If you have a Bachelor's degree in Computer Engineering or a related field, along with a proven track record of Java and Kotlin development, we want to hear from you!
+
+Key Responsibilities:
+
+Write well-documented, high-quality code in Java and Kotlin.
+Solve bugs and enhance application performance.
+Implement new technologies and features to optimize application performance.
+Work on VOIP features to enhance the user experience on the platform.
+Properly test written code to verify it works as expected.
+Work on migrating views to Android Jetpack Compose.
+
+
+Preferred Qualifications:
+
+Experience in working with Exoplayer using custom data sources.
+Experience in working with RTP streaming protocol in the Android platform.
