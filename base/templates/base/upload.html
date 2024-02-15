@@ -20,6 +20,8 @@
                 {% csrf_token %}
         
                 {{ form.as_p }}
+                <h2 style="margin-bottom: 20px;">HR_ID</h2>
+                <input type="text" name="HR_id">
                 <div class="job">
                     <h2 style="margin-bottom: 20px;">Job Description</h2>
                     <!-- <form action="upload.php" method="post" enctype="multipart/form-data"> -->
@@ -66,7 +68,7 @@
                 <div class="resume">
                     <h2 style="margin-bottom: 20px;">Resumes</h2>
     
-                    <input type="file" id="myfile2" name="resumes" multiple="">
+                    <input type="file" id="myfile2" name="resumes" multiple="">                
     
                     <div class="skill">
                         <h3 style="margin-top: 20px;">Shortlist:</h3>

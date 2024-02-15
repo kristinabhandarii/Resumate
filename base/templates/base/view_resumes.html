@@ -1,0 +1,18 @@
+<!-- base/view_resumes.html -->
+{% extends 'main.html' %}
+
+{% block content %}
+    <h2>Your Resumes</h2>
+    
+    {% if resumes %}
+        <ul>
+            {% for resume in resumes %}
+                <li>
+                    <a href="{{ resume.file.url }}" target="_blank">{{ resume.file.name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No resumes uploaded yet.</p>
+    {% endif %}
+{% endblock %}
