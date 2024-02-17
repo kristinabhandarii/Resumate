@@ -1,7 +1,7 @@
 <!-- base/view_resumes.html -->
 {% extends 'main.html' %}
-
-{% block content %}
+{% block content%}
+{% comment %} {% block content %}
     <h2>Your Resumes</h2>
     
     {% if resumes %}
@@ -14,5 +14,25 @@
         </ul>
     {% else %}
         <p>No resumes uploaded yet.</p>
+    {% endif %} {% endcomment %}
+<!-- view_resumes.html -->
+    <h1>Your Resumes</h1>
+    {% if resumes_with_text %}
+        <ul>
+            {% for resume_info in resumes_with_text %}
+                <li>
+                    <strong>Resume:</strong> <a href="{{ resume_info.resume.file.url }}" target="_blank">{{ resume_info.resume.file.name }}</a><br>
+                    {% if resume_info.resume_text_content %}
+                        <strong>Text Content:</strong> 
+                        <a href="{{ resume_info.resume.resume_text_content.url }}" target="_blank">{{ resume_info.resume.resume_text_content.name }}</a><br>
+                    {% else %}
+                        No text content available.
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No resumes available.</p>
     {% endif %}
-{% endblock %}
+    
+{% endblock content %}
