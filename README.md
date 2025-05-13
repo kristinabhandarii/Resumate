@@ -1,3 +1,4 @@
+
 # 📄 Resumate: Automated Resume Screening System
 
 Resumate is an AI-powered resume screening system designed to help organizations streamline the recruitment process. It automates the tedious and time-consuming task of manually going through resumes by evaluating and ranking candidates based on job-specific criteria.
